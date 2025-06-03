@@ -1,0 +1,59 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animations */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes typing-cursor {
+  from, to { border-color: transparent }
+  50% { border-color: currentColor }
+}
+
+/* Grid background pattern */
+.bg-grid-dark {
+  background-image: radial-gradient(circle, rgba(55, 65, 81, 0.3) 1px, transparent 1px);
+}
+
+.bg-grid-light {
+  background-image: radial-gradient(circle, rgba(209, 213, 219, 0.3) 1px, transparent 1px);
+}
+
+/* Smooth transitions */
+* {
+  @apply transition-colors duration-200;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gradient-to-b from-purple-500 to-pink-500 rounded-full;
+}
+
+/* Support for backdrop blur */
+@supports (backdrop-filter: blur(24px)) {
+  .backdrop-blur-xl {
+    backdrop-filter: blur(24px);
+  }
+}
+
+/* Fix for Safari transitions */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    * {
+      transition-property: none !important;
+    }
+  }
+}
