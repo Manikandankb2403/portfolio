@@ -16,6 +16,7 @@
     "@tailwindcss/typography": "^0.5.16",
     "axios": "^1.9.0",
     "cors": "^2.8.5",
+    "dist": "^0.1.2",
     "docenv": "^2.0.6",
     "dotenv": "^16.5.0",
     "env": "^0.0.2",
