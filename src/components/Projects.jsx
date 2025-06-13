@@ -48,8 +48,8 @@ const Projects = ({ darkMode }) => {
         "Role-based access control"
       ],
       links: {
-        source: "https://github.com/Manikandankb2403",
-        demo: "#"
+        source: "https://github.com/Manikandankb2403/College-Complaint-Management-System",
+        demo: "https://college-complaint-management-system-hve6.onrender.com"
       },
       icon: <FaLaptopCode />,
       color: "text-green-500",
