@@ -15,7 +15,7 @@ const Projects = ({ darkMode }) => {
       ],
       links: {
         source: "https://github.com/Manikandankb2403",
-        demo: "#"
+        demo: "Demo unavailable due to model size constraints — local testing only"
       },
       icon: <FaMicrophone />,
       color: "text-pink-500",
@@ -65,7 +65,7 @@ const Projects = ({ darkMode }) => {
         "Supports training-ready dataset generation"
       ],
       links: {
-        source: "https://github.com/Manikandankb2403",
+        source: "https://github.com/Manikandankb2403/data_collection_voice",
         demo: "https://data-collection-voice-frontend.onrender.com"
       },
       icon: <FaMicrophone />,
@@ -74,15 +74,11 @@ const Projects = ({ darkMode }) => {
     }
   ];
 
-  // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { 
-        staggerChildren: 0.15,
-        delayChildren: 0.1
-      }
+      transition: { staggerChildren: 0.15, delayChildren: 0.1 }
     }
   };
 
@@ -91,18 +87,12 @@ const Projects = ({ darkMode }) => {
     visible: {
       y: 0,
       opacity: 1,
-      transition: { 
-        duration: 0.4,
-        ease: [0.25, 0.1, 0.25, 1]
-      }
+      transition: { duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }
     },
     hover: {
       y: -8,
       boxShadow: "0 20px 25px -10px rgba(0, 0, 0, 0.15)",
-      transition: {
-        type: "spring",
-        stiffness: 300
-      }
+      transition: { type: "spring", stiffness: 300 }
     }
   };
 
@@ -118,8 +108,7 @@ const Projects = ({ darkMode }) => {
   return (
     <section id="projects" className={`py-24 ${darkMode ? 'bg-gray-900/95' : 'bg-gray-50/95'} transition-colors duration-300`}>
       <div className="container mx-auto px-4 max-w-6xl">
-        {/* Section Header */}
-        <motion.div 
+        <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: -15 }}
           animate={{ opacity: 1, y: 0 }}
@@ -133,8 +122,7 @@ const Projects = ({ darkMode }) => {
           </p>
         </motion.div>
 
-        {/* Projects Grid */}
-        <motion.div 
+        <motion.div
           className="grid md:grid-cols-2 lg:grid-cols-2 gap-8"
           variants={containerVariants}
           initial="hidden"
@@ -142,17 +130,14 @@ const Projects = ({ darkMode }) => {
           viewport={{ once: true, margin: "-100px" }}
         >
           {projects.map((project, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               variants={itemVariants}
               whileHover="hover"
               className={`rounded-xl overflow-hidden h-full flex flex-col ${
-                darkMode 
-                  ? 'bg-gray-800/80 border border-gray-700' 
-                  : 'bg-white border border-gray-200 shadow-lg'
+                darkMode ? 'bg-gray-800/80 border border-gray-700' : 'bg-white border border-gray-200 shadow-lg'
               }`}
             >
-              {/* Project Header */}
               <div className={`bg-gradient-to-r ${project.gradient} p-1`}>
                 <div className={`h-40 flex items-center justify-center ${darkMode ? 'bg-gray-800' : 'bg-gray-100'}`}>
                   <div className="text-center px-4">
@@ -165,26 +150,22 @@ const Projects = ({ darkMode }) => {
                   </div>
                 </div>
               </div>
-              
-              {/* Project Content */}
+
               <div className="p-6 flex flex-col flex-grow">
                 <p className={`mb-4 leading-relaxed ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
                   {project.description}
                 </p>
-                
-                {/* Technologies */}
+
                 <div className="mb-4 mt-auto">
                   <h4 className={`font-semibold mb-3 ${darkMode ? 'text-gray-300' : 'text-gray-800'}`}>Technologies:</h4>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, idx) => (
-                      <motion.span 
+                      <motion.span
                         key={idx}
                         variants={techVariants}
                         viewport={{ once: true }}
                         className={`px-3 py-1 rounded-full text-xs font-medium ${
-                          darkMode 
-                            ? 'bg-gray-700/50 text-gray-200' 
-                            : 'bg-gray-100 text-gray-800'
+                          darkMode ? 'bg-gray-700/50 text-gray-200' : 'bg-gray-100 text-gray-800'
                         }`}
                       >
                         {tech}
@@ -192,13 +173,12 @@ const Projects = ({ darkMode }) => {
                     ))}
                   </div>
                 </div>
-                
-                {/* Achievements */}
+
                 <div className="mb-6">
                   <h4 className={`font-semibold mb-3 ${darkMode ? 'text-gray-300' : 'text-gray-800'}`}>Key Results:</h4>
                   <ul className="space-y-2">
                     {project.achievements.map((achievement, idx) => (
-                      <li 
+                      <li
                         key={idx}
                         className={`flex items-start ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}
                       >
@@ -208,30 +188,40 @@ const Projects = ({ darkMode }) => {
                     ))}
                   </ul>
                 </div>
-                
-                {/* Project Links */}
+
+                {/* Buttons */}
                 <div className="flex justify-between gap-3 pt-4 border-t border-gray-700/30 mt-auto">
-                  <motion.a
-                    href={project.links.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg font-medium text-sm ${
-                      darkMode 
-                        ? 'bg-gray-700 hover:bg-gray-600 text-white' 
-                        : 'bg-gray-200 hover:bg-gray-300 text-gray-800'
-                    }`}
-                    whileHover={{ scale: 1.03 }}
-                    whileTap={{ scale: 0.97 }}
-                  >
-                    <FaExternalLinkAlt /> Live Demo
-                  </motion.a>
+                  {project.links.demo === "#" || project.links.demo.toLowerCase().includes("unavailable") ? (
+                    <div
+                      className={`flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg font-medium text-sm cursor-not-allowed ${
+                        darkMode ? 'bg-gray-700 text-gray-400' : 'bg-gray-200 text-gray-500'
+                      }`}
+                      title="Demo unavailable due to model size constraints — tested locally only"
+                    >
+                      <FaExternalLinkAlt /> Demo Unavailable
+                    </div>
+                  ) : (
+                    <motion.a
+                      href={project.links.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg font-medium text-sm ${
+                        darkMode ? 'bg-gray-700 hover:bg-gray-600 text-white' : 'bg-gray-200 hover:bg-gray-300 text-gray-800'
+                      }`}
+                      whileHover={{ scale: 1.03 }}
+                      whileTap={{ scale: 0.97 }}
+                    >
+                      <FaExternalLinkAlt /> Live Demo
+                    </motion.a>
+                  )}
+
                   <motion.a
                     href={project.links.source}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg font-medium text-sm ${
-                      darkMode 
-                        ? 'bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white' 
+                      darkMode
+                        ? 'bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white'
                         : 'bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-400 hover:to-purple-400 text-white'
                     }`}
                     whileHover={{ scale: 1.03 }}
