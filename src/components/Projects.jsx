@@ -14,7 +14,7 @@ const Projects = ({ darkMode }) => {
         "Reduced UI interactions by 70%"
       ],
       links: {
-        source: "https://github.com/Manikandankb2403",
+        source: "https://github.com/Manikandankb2403/Voice-Based-AI-Shop-Assistant",
         demo: "Demo unavailable due to model size constraints — local testing only"
       },
       icon: <FaMicrophone />,
