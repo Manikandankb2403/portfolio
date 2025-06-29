@@ -31,8 +31,8 @@ const Projects = ({ darkMode }) => {
         "Real-time grading via image upload"
       ],
       links: {
-        source: "https://github.com/Manikandankb2403",
-        demo: "#"
+        source: "https://github.com/Manikandankb2403/Tomato-Quality-Classification",
+        demo: "Demo unavailable due to model size constraints — local testing only"
       },
       icon: <FaLaptopCode />,
       color: "text-indigo-500",
