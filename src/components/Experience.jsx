@@ -21,9 +21,9 @@ const Experience = ({ darkMode }) => {
       accent: "bg-gradient-to-r from-blue-500 to-cyan-500"
     },
     {
-      position: "Freelance PC Technician (Part-Time)",
+      position: "Freelance PC Technician (Remote, Part-time)",
       company: "Independent",
-      period: "Jan 2020 – On-Going",
+      period: "Jan 2020 – Present",
       description: "System Assembly and Troubleshooting",
       responsibilities: [
         "Diagnosed and repaired over 500 PC issues involving CPUs, RAM, SSDs, and motherboards",
