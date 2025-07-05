@@ -23,7 +23,7 @@ const Experience = ({ darkMode }) => {
     {
       position: "Freelance PC Technician (Part-Time)",
       company: "Independent",
-      period: "Jan 2020 – Present",
+      period: "Jan 2020 – On-Going",
       description: "System Assembly and Troubleshooting",
       responsibilities: [
         "Diagnosed and repaired over 500 PC issues involving CPUs, RAM, SSDs, and motherboards",
