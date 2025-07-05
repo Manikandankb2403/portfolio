@@ -21,7 +21,7 @@ const Experience = ({ darkMode }) => {
       accent: "bg-gradient-to-r from-blue-500 to-cyan-500"
     },
     {
-      position: "Freelance PC Technician",
+      position: "Freelance PC Technician (Part-Time)",
       company: "Independent",
       period: "Jan 2020 – Present",
       description: "System Assembly and Troubleshooting",
