@@ -28,7 +28,7 @@ const Footer = ({ darkMode }) => {
   // Social media links data
   const socialLinks = [
     { icon: <FaGithub size={20} />, url: 'https://github.com/Manikandankb2403', label: 'GitHub' },
-    { icon: <FaLinkedin size={20} />, url: 'https://linkedin.com/in/manikandan-kb', label: 'LinkedIn' },
+    { icon: <FaLinkedin size={20} />, url: 'https://www.linkedin.com/in/manikandankb24/', label: 'LinkedIn' },
     // { icon: <FaTwitter size={20} />, url: 'https://twitter.com/manikandan', label: 'Twitter' },
     { icon: <FaInstagram size={20} />, url: 'https://www.instagram.com/manikandan_k_b?igsh=eG9vbDhuNDRkOTVs', label: 'Instagram' },
   ];
