@@ -26,7 +26,7 @@ const HeroContent = ({ darkMode }) => {
       "Specialized in custom PC builds and hardware troubleshooting with 500+ systems repaired.",
       "5+ years of freelance experience since 2020, complemented by 6 months of professional internship"
     ],
-    linkedin: "https://linkedin.com/in/manikandan-kb",
+    linkedin: "https://www.linkedin.com/in/manikandankb24/",
     achievements: [
       "Developed CNN-based tomato quality classifier with 97.5% accuracy",
       "Built college complaint management system using MERN stack",
