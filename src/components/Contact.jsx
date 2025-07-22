@@ -269,7 +269,7 @@ const Contact = ({ darkMode }) => {
                   variants={itemVariants}
                 >
                   <a 
-                    href="https://linkedin.com/in/manikandan-kb" 
+                    href="https://www.linkedin.com/in/manikandankb24/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className={`p-3 md:p-4 rounded-lg md:rounded-xl transition-all duration-300 ${
