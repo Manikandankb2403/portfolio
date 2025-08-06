@@ -121,19 +121,24 @@ const About = ({ darkMode }) => {
             duration: 0.8
           }}
         >
-          <div className={`text-xl md:text-2xl leading-relaxed md:leading-loose space-y-6 ${
-            darkMode ? 'text-gray-300' : 'text-gray-700'
-          }`}>
+          <div className={`text-xl md:text-2xl leading-relaxed md:leading-loose space-y-6 ${darkMode ? 'text-gray-300' : 'text-gray-700'
+            }`}>
             <p>
-              I'm a <span className={`font-semibold ${darkMode ? 'text-indigo-400' : 'text-indigo-600'}`}>Computer Science specialist</span> with expertise in <span className={`font-semibold ${darkMode ? 'text-purple-400' : 'text-purple-600'}`}>AI development</span> and system architecture, dedicated to creating intelligent solutions that solve complex problems at the intersection of hardware capabilities and software innovation.
+              I'm a <span className={`font-semibold ${darkMode ? 'text-indigo-400' : 'text-indigo-600'}`}>Software Engineer</span> passionate about building intelligent, impactful solutions.
+              As a <span className={`font-semibold ${darkMode ? 'text-indigo-400' : 'text-indigo-600'}`}>Computer Science specialist</span> with expertise in
+              <span className={`font-semibold ${darkMode ? 'text-purple-400' : 'text-purple-600'}`}> AI development</span> and system architecture, I’m dedicated to solving complex problems at the intersection of hardware capabilities and software innovation.
             </p>
             <p>
-              My technical toolkit includes <span className={`font-semibold ${darkMode ? 'text-indigo-400' : 'text-indigo-600'}`}>machine learning implementation</span>, <span className={`font-semibold ${darkMode ? 'text-purple-400' : 'text-purple-600'}`}>full-stack development</span>, and <span className={`font-semibold ${darkMode ? 'text-indigo-400' : 'text-indigo-600'}`}>system optimization</span>. I excel at transforming technical concepts into user-friendly applications that deliver measurable results.
+              My technical toolkit includes <span className={`font-semibold ${darkMode ? 'text-indigo-400' : 'text-indigo-600'}`}>machine learning implementation</span>,
+              <span className={`font-semibold ${darkMode ? 'text-purple-400' : 'text-purple-600'}`}> full-stack development</span>, and
+              <span className={`font-semibold ${darkMode ? 'text-indigo-400' : 'text-indigo-600'}`}> system optimization</span>.
+              I excel at transforming technical concepts into user-friendly applications that deliver measurable results.
             </p>
             <p>
               Currently advancing my expertise in artificial intelligence through graduate studies while developing practical solutions that bridge theoretical knowledge with real-world implementation challenges.
             </p>
           </div>
+
         </motion.div>
         
         {/* Education Section */}

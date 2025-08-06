@@ -89,7 +89,7 @@ const Footer = ({ darkMode }) => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
             >
-              Computer Science graduate with expertise in AI development, system administration, and full-stack web solutions.
+              Computer Science graduate and Software Engineer with expertise in AI Development, System Administration, and Full-Stack Web Solutions.
             </motion.p>
             <motion.div 
               className="flex items-center"

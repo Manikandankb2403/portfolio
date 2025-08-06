@@ -11,8 +11,8 @@ const HeroContent = ({ darkMode }) => {
   // Updated profile data with accurate experience and achievements
   const profile = {
     name: "Manikandan K B",
-    roles: ['AI Developer', 'System Administrator', 'MERN Stack Developer', 'PC Hardware Specialist'],
-    bio: "Computer Science graduate with expertise in AI development, system administration, and full-stack web solutions",
+    roles: ['Software Engineer','AI Developer','MERN Stack Developer','System Administrator','PC Hardware Specialist'],
+    bio: "Computer Science graduate with expertise in AI Development , Software Engineer , System Administration and Full-Stack Web Solutions",
     stats: {
       projects: 4, // Tomato Quality, Complaint System, Voice Assistant, PC Builds
       experience: "5+", // Freelance since 2020
@@ -21,10 +21,10 @@ const HeroContent = ({ darkMode }) => {
     },
     resumeFile: "/Manikandan_Resume.pdf",
     bioParagraphs: [
-      "Developed a CNN-based tomato quality classification system achieving 97.5% accuracy, showcasing strong AI/ML skills.",
-      "Built a comprehensive college complaint management system using MERN stack, demonstrating full-stack development capabilities.",
-      "Specialized in custom PC builds and hardware troubleshooting with 500+ systems repaired.",
-      "5+ years of freelance experience since 2020, complemented by 6 months of professional internship"
+      "As a passionate Software Engineer, I developed a CNN-based tomato quality classification system achieving 97.5% accuracy, showcasing strong AI/ML skills.",
+      "Built a comprehensive college complaint management system using the MERN stack, demonstrating full-stack development capabilities as a Software Engineer.",
+      "Specialized in custom PC builds and hardware troubleshooting with 500+ systems repaired, blending software knowledge with hands-on system-level problem-solving.",
+      "5+ years of freelance experience since 2020, complemented by 6 months of professional internship, continuously evolving as a well-rounded Software Engineer."
     ],
     linkedin: "https://www.linkedin.com/in/manikandankb24/",
     achievements: [
@@ -36,10 +36,10 @@ const HeroContent = ({ darkMode }) => {
   };
 
   const codeSnippets = [
-    'model.add(Conv2D(32, (3,3), activation="relu")) // Tomato Classifier',
-    'router.post("/complaints", authMiddleware); // MERN Complaint System',
-    'speechRecognition.init(); // Voice Assistant Project',
-    'pcBuild.optimizeFor("AI_Workloads"); // Custom PC Configs'
+    'model.add(Conv2D(32, (3,3), activation="relu")) // AI Model - Tomato Classifier by Software Engineer',
+    'router.post("/complaints", authMiddleware); // MERN Stack Complaint System by Full-Stack Software Engineer',
+    'speechRecognition.init(); // Voice Assistant Project - AI by Software Engineer',
+    'pcBuild.optimizeFor("AI_Workloads"); // Custom PC Build - Engineered for Performance by Software Engineer'
   ];
 
   // Set fixed heights for animation containers
