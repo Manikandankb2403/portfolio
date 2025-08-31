@@ -9,7 +9,7 @@ const About = ({ darkMode }) => {
     {
       degree: "Master of Computer Applications",
       institution: "SASTRA Deemed to be University, Thanjavur",
-      period: "2023 – Present",
+      period: "2023 – 2025",
       cgpa: "CGPA: 6.93 / 10 ",
       icon: <IoIosSchool className="text-3xl" />,
       highlights: [
