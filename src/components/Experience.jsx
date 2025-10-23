@@ -7,7 +7,7 @@ const Experience = ({ darkMode }) => {
     {
       position: "AI Developer Intern",
       company: "Tech Vaseegrah",
-      period: "Jan 2025 – Present",
+      period: "Jan 2025 – July 2025",
       description: "Voice AI Solutions for Customer Service and Retail",
       responsibilities: [
         "Developed a call-handling AI assistant capable of executing voice commands using NLP",
