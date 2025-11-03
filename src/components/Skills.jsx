@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import {
   FaCode, FaRobot, FaServer, FaTools,
-  FaPython, FaJs, FaHtml5, FaPhp, FaNodeJs, FaReact,FaJava,
+  FaPython, FaJs, FaHtml5, FaNodeJs, FaReact,FaJava,
   FaMicrophone, FaChartLine, FaNetworkWired, FaWindows
 } from 'react-icons/fa';
 import {
