@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import {
   FaCode, FaRobot, FaServer, FaTools,
-  FaPython, FaJs, FaHtml5, FaPhp, FaNodeJs, FaReact,
+  FaPython, FaJs, FaHtml5, FaPhp, FaNodeJs, FaReact,FaJava,
   FaMicrophone, FaChartLine, FaNetworkWired, FaWindows
 } from 'react-icons/fa';
 import {
@@ -25,7 +25,8 @@ const Skills = ({ darkMode }) => {
         { name: "Python", icon: <FaPython size={20} /> },
         { name: "JavaScript", icon: <FaJs size={20} /> },
         { name: "PHP", icon: <FaPhp size={20} /> },
-        { name: "HTML/CSS", icon: <FaHtml5 size={20} /> }
+        { name: "HTML/CSS", icon: <FaHtml5 size={20} /> },
+        { name: "Java", icon: <FaJava size={20} /> }
       ]
     },
     {
