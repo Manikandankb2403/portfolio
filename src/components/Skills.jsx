@@ -22,11 +22,10 @@ const Skills = ({ darkMode }) => {
       skills: [
         { name: "C", icon: <SiC size={20} /> },
         { name: "C++", icon: <SiCplusplus size={20} /> },
+        { name: "Java", icon: <FaJava size={20} /> }
         { name: "Python", icon: <FaPython size={20} /> },
         { name: "JavaScript", icon: <FaJs size={20} /> },
-        { name: "PHP", icon: <FaPhp size={20} /> },
-        { name: "HTML/CSS", icon: <FaHtml5 size={20} /> },
-        { name: "Java", icon: <FaJava size={20} /> }
+        { name: "HTML/CSS", icon: <FaHtml5 size={20} /> }
       ]
     },
     {
