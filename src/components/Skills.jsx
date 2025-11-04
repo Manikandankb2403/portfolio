@@ -2,11 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import {
   FaCode, FaRobot, FaServer, FaTools,
-  FaPython, FaJs, FaHtml5, FaNodeJs, FaReact,FaJava,
+  FaPython, FaJs, FaHtml5, FaNodeJs, FaReact,
   FaMicrophone, FaChartLine, FaNetworkWired, FaWindows
 } from 'react-icons/fa';
 import {
-  SiC, SiCplusplus, SiMongodb, SiExpress,
+  SiC, SiCplusplus, SiJava,SiMongodb, SiExpress,
   SiGit, SiDocker, SiTensorflow, SiPytorch,
   SiPostman, SiLinux, SiGooglecloud, SiNvidia
 } from 'react-icons/si';
@@ -22,7 +22,7 @@ const Skills = ({ darkMode }) => {
       skills: [
         { name: "C", icon: <SiC size={20} /> },
         { name: "C++", icon: <SiCplusplus size={20} /> },
-        { name: "Java", icon: <FaJava size={20} /> }
+        { name: "Java", icon: <SiJava size={20} /> }
         { name: "Python", icon: <FaPython size={20} /> },
         { name: "JavaScript", icon: <FaJs size={20} /> },
         { name: "HTML/CSS", icon: <FaHtml5 size={20} /> }
