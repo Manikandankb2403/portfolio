@@ -84,7 +84,7 @@ const Header = ({ darkMode, setDarkMode }) => {
             <div className="flex items-center group">
               <div className="relative">
                 <a
-                  href="#"
+                  href="#" onClick={(e) => { e.preventDefault(); window.location.reload();}}
                   className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 bg-clip-text text-transparent"
                 >
                   Manikandan K.B.
