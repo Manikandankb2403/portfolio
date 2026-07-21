@@ -12,26 +12,26 @@ const HeroContent = ({ darkMode }) => {
   const profile = {
     name: "Manikandan K B",
     roles: ['Software Engineer','AI Developer','MERN Stack Developer','System Administrator','PC Hardware Specialist'],
-    bio: "Computer Science graduate with expertise in AI Development , Software Engineer , System Administration and Full-Stack Web Solutions",
+    bio: "Java Developer and AI Engineer with experience building Generative AI, Full-Stack, and Voice AI applications using Java, Spring, React, Python, and LLM technologies.",
     stats: {
-      projects: 4, // Tomato Quality, Complaint System, Voice Assistant, PC Builds
-      experience: "5+", // Freelance since 2020
-      internship: "6 months", // Internship experience
-      satisfaction: 98
+      projects: 6,
+      experience: "1+",
+      internship: "6 months",
+      techStack: "15+",
     },
     resumeFile: "/Manikandan_Resume.pdf",
     bioParagraphs: [
-      "As a passionate Software Engineer, I developed a CNN-based tomato quality classification system achieving 97.5% accuracy, showcasing strong AI/ML skills.",
-      "Built a comprehensive college complaint management system using the MERN stack, demonstrating full-stack development capabilities as a Software Engineer.",
-      "Specialized in custom PC builds and hardware troubleshooting with 500+ systems repaired, blending software knowledge with hands-on system-level problem-solving.",
-      "5+ years of freelance experience since 2020, complemented by 6 months of professional internship, continuously evolving as a well-rounded Software Engineer."
+      "Java Developer with strong knowledge of Core Java, Object-Oriented Programming, Spring, SQL, and application development.",
+      "Built AI-powered Voice Commerce and automation platforms using Whisper STT, LLMs, FastAPI, React, Node.js, and MongoDB.",
+      "Developed enterprise workflow automation solutions integrating JIRA, Confluence, Microsoft Copilot, and GoHighLevel CRM.",
+      "Passionate about building scalable software, solving real-world problems, and continuously learning modern backend and AI technologies."
     ],
     linkedin: "https://www.linkedin.com/in/manikandankb24/",
     achievements: [
-      "Developed CNN-based tomato quality classifier with 97.5% accuracy",
-      "Built college complaint management system using MERN stack",
-      "Specialized in custom PC builds with 500+ systems repaired",
-      "5+ years of freelance experience since 2020"
+      "Developed a Voice Commerce Platform using Whisper STT + LLM",
+      "Built AI workflow automation using JIRA, Confluence & Microsoft Copilot",
+      "Achieved 97.5% accuracy in Tomato Quality Classification using CNN",
+      "Developed CRM automation and AI Voice Assistant using GoHighLevel"
     ]
   };
 
@@ -319,14 +319,14 @@ batik="true"                className="text-4xl md:text-5xl font-bold mb-4 track
                   projects: "Projects",
                   experience: "Freelance Exp",
                   internship: "Internship",
-                  satisfaction: "Satisfaction"
+                  techStack: "Tech Stack",
                 };
                 
                 const descriptions = {
                   projects: "Completed professional projects",
                   experience: "Years of freelance experience",
                   internship: "Professional internship",
-                  satisfaction: "Client satisfaction rate"
+                  techStack: "Languages, frameworks & tools",
                 };
                 
                 return (
@@ -342,7 +342,7 @@ batik="true"                className="text-4xl md:text-5xl font-bold mb-4 track
                       {icons[index]}
                     </div>
                     <div className={`text-2xl font-bold ${colors[index]}`}>
-                      {value}{key === 'satisfaction' ? '%' : ''}
+                      {value}
                     </div>
                     <div className={`text-xs uppercase tracking-wider mt-1 ${
                       darkMode ? 'text-gray-400' : 'text-gray-500'

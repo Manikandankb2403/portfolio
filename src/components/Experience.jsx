@@ -5,32 +5,72 @@ import { FaCalendarAlt, FaLaptopCode, FaTools } from 'react-icons/fa';
 const Experience = ({ darkMode }) => {
   const experiences = [
     {
-      position: "AI Developer Intern",
+      position: "Software Developer Intern",
       company: "Tech Vaseegrah",
-      period: "Jan 2025 – July 2025",
-      description: "Voice AI Solutions for Customer Service and Retail",
+      period: "Jan 2025 – Jul 2025",
+      description: "Generative AI & Voice AI Development",
       responsibilities: [
-        "Developed a call-handling AI assistant capable of executing voice commands using NLP",
-        "Integrated speech-to-text and LLM-based query classification for module routing",
-        "Built a fully voice-oriented shop assistant with fine-tuned Whisper STT model and React frontend",
-        "Enhanced user interaction accuracy and reduced latency in task execution"
+        "Developed AI-powered voice assistants using Whisper STT, LLMs, and Retrieval-Augmented Generation (RAG).",
+        "Built voice commerce applications enabling hands-free product search, cart management, and checkout.",
+        "Integrated Speech-to-Text, Natural Language Processing, and AI workflows into full-stack applications.",
+        "Developed scalable React, FastAPI, and Node.js solutions while improving user experience and automation."
       ],
-      skills: ["Python", "NLP", "LLMs", "Speech Recognition", "React", "Whisper STT"],
+      skills: [
+        "Python",
+        "React",
+        "FastAPI",
+        "Node.js",
+        "Whisper STT",
+        "LLMs",
+        "RAG",
+        "NLP"
+      ],
       icon: <FaLaptopCode />,
       color: "text-blue-500",
       accent: "bg-gradient-to-r from-blue-500 to-cyan-500"
     },
+  
     {
-      position: "Freelance PC Technician (Remote, Part-time)",
-      company: "Independent",
-      period: "Jan 2020 – Present",
-      description: "System Assembly and Troubleshooting",
+      position: "Freelance Software Developer",
+      company: "Remote",
+      period: "Aug 2025 – Present",
+      description: "AI Workflow Automation & CRM Solutions",
       responsibilities: [
-        "Diagnosed and repaired over 500 PC issues involving CPUs, RAM, SSDs, and motherboards",
-        "Built customized desktops for gaming, AI workloads, and general use",
-        "Configured OS installations, BIOS/UEFI, and local area network (LAN) setups"
+        "Developed AI-powered workflow automation using Microsoft Copilot Studio and GoHighLevel.",
+        "Built CRM automation solutions including appointment scheduling, voice AI, and customer engagement workflows.",
+        "Integrated JIRA, Confluence, Microsoft Copilot, and enterprise tools to streamline business operations.",
+        "Designed automation workflows that improved productivity and reduced manual effort."
       ],
-      skills: ["Hardware", "Troubleshooting", "Networking", "System Configuration"],
+      skills: [
+        "Microsoft Copilot Studio",
+        "GoHighLevel",
+        "JIRA",
+        "Confluence",
+        "CRM",
+        "AI Automation"
+      ],
+      icon: <FaLaptopCode />,
+      color: "text-purple-500",
+      accent: "bg-gradient-to-r from-purple-500 to-pink-500"
+    },
+  
+    {
+      position: "Freelance PC Technician",
+      company: "Independent",
+      period: "Jan 2020 – Dec 2024",
+      description: "PC Assembly & Technical Support",
+      responsibilities: [
+        "Diagnosed and resolved 500+ hardware and software issues.",
+        "Built custom desktop systems for gaming, AI, and productivity.",
+        "Installed Windows, Linux, BIOS/UEFI, networking, and hardware upgrades."
+      ],
+      skills: [
+        "Windows",
+        "Linux",
+        "Networking",
+        "Hardware",
+        "Troubleshooting"
+      ],
       icon: <FaTools />,
       color: "text-emerald-500",
       accent: "bg-gradient-to-r from-emerald-500 to-teal-500"
@@ -105,7 +145,7 @@ const Experience = ({ darkMode }) => {
                 ? 'bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400' 
                 : 'bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600'
             }`}>
-              Professional Journey
+              Professional Experience
             </h2>
             <motion.div 
               className="w-20 md:w-24 h-1 md:h-1.5 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-purple-500"
@@ -117,7 +157,7 @@ const Experience = ({ darkMode }) => {
           <p className={`text-base md:text-lg max-w-2xl mx-auto mt-4 md:mt-6 leading-relaxed ${
             darkMode ? 'text-gray-300' : 'text-gray-600'
           }`}>
-            My work experience and technical contributions across different domains
+            Hands-on experience in AI, full-stack development, workflow automation, and technical support.
           </p>
         </motion.div>
 

@@ -30,51 +30,54 @@ const Skills = ({ darkMode }) => {
     },
     {
       icon: <FaRobot size={24} />,
-      title: "AI/ML",
+      title: "Generative AI",
       color: "from-purple-400 to-pink-500",
-      bg: "bg-purple-100",
       skills: [
+        { name: "LLMs", icon: <FaRobot size={20} /> },
+        { name: "Whisper STT", icon: <FaMicrophone size={20} /> },
         { name: "NLP", icon: <SiTensorflow size={20} /> },
-        { name: "Speech Recognition", icon: <FaMicrophone size={20} /> },
-        { name: "CNN Models", icon: <SiNvidia size={20} /> },
-        { name: "Model Evaluation", icon: <FaChartLine size={20} /> }
+        { name: "Prompt Engineering", icon: <FaChartLine size={20} /> }
       ]
     },
     {
       icon: <FaServer size={24} />,
-      title: "Web Development",
+      title: "Software Development",
       color: "from-green-400 to-emerald-600",
-      bg: "bg-green-100",
       skills: [
-        { name: "MERN Stack", icon: <SiMongodb size={20} /> },
-        { name: "React.js", icon: <FaReact size={20} /> },
+        { name: "Spring", icon: <FaJava size={20} /> },
+        { name: "React", icon: <FaReact size={20} /> },
         { name: "Node.js", icon: <FaNodeJs size={20} /> },
-        { name: "Express", icon: <SiExpress size={20} /> }
+        {name: "Express.js", icon: <SiExpress size={20} /> },
+        { name: "FastAPIs", icon: <FaServer size={20} /> },
+        { name: "REST APIs", icon: <FaNetworkWired size={20} /> }
       ]
     },
     {
       icon: <FaTools size={24} />,
-      title: "System Administration",
+      title: "Databases & Tools",
       color: "from-yellow-400 to-orange-400",
-      bg: "bg-yellow-100",
       skills: [
-        { name: "Windows", icon: <FaWindows size={20} /> },
-        { name: "Linux", icon: <SiLinux size={20} /> },
-        { name: "BIOS/UEFI", icon: <VscVm size={20} /> },
-        { name: "Networking", icon: <FaNetworkWired size={20} /> }
+        { name: "SQL", icon: <FaServer size={20} /> },
+        { name: "MongoDB", icon: <SiMongodb size={20} /> },
+        { name: "Git", icon: <SiGit size={20} /> },
+        { name: "Postman", icon: <SiPostman size={20} /> }
       ]
-    }
+    },
   ];
 
   const tools = [
     { name: "Git", icon: <SiGit size={20} /> },
+    { name: "GitHub", icon: <SiGit size={20} /> },
     { name: "VS Code", icon: <FaCode size={20} /> },
-    { name: "Docker", icon: <SiDocker size={20} /> },
-    { name: "TensorFlow", icon: <SiTensorflow size={20} /> },
-    { name: "PyTorch", icon: <SiPytorch size={20} /> },
     { name: "Postman", icon: <SiPostman size={20} /> },
-    { name: "Linux Terminal", icon: <VscTerminalLinux size={20} /> },
-    { name: "Google Cloud", icon: <SiGooglecloud size={20} /> }
+    { name: "Docker", icon: <SiDocker size={20} /> },
+    { name: "JIRA", icon: <FaTools size={20} /> },
+    { name: "Confluence", icon: <FaTools size={20} /> },
+    { name: "Microsoft Copilot", icon: <FaRobot size={20} /> },
+    { name: "GoHighLevel", icon: <FaServer size={20} /> },
+    { name: "MongoDB Compass", icon: <SiMongodb size={20} /> },
+    { name: "Linux", icon: <SiLinux size={20} /> },
+    { name: "Windows", icon: <FaWindows size={20} /> }
   ];
 
   return (
@@ -96,7 +99,7 @@ const Skills = ({ darkMode }) => {
             Technical Expertise
           </h2>
           <p className={`mt-4 text-lg ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-            My expertise across multiple domains and platforms
+          Technologies and tools I use to build scalable software, AI solutions, and full-stack applications.
           </p>
         </motion.div>
 

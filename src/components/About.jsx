@@ -13,10 +13,10 @@ const About = ({ darkMode }) => {
       cgpa: "CGPA: 6.93 / 10 ",
       icon: <IoIosSchool className="text-3xl" />,
       highlights: [
-        "Developing computer vision systems using TensorFlow and OpenCV",
-        "Implementing ML algorithms for predictive analytics solutions",
-        "Researching neural network optimization techniques",
-        "Building AI-powered applications with Python and PyTorch"
+        "Specialized in Artificial Intelligence and Application Development",
+        "Built Generative AI and Voice AI applications",
+        "Worked on LLMs, Whisper STT and NLP systems",
+        "Developed scalable Full-Stack applications using React and FastAPI"
       ]
     },
     {
@@ -26,11 +26,11 @@ const About = ({ darkMode }) => {
       cgpa: "CGPA: 7.80 / 10",
       icon: <FaGraduationCap className="text-3xl" />,
       highlights: [
-        "Engineered full-stack applications using MERN stack",
-        "Designed relational databases with MySQL and MongoDB",
-        "Implemented RESTful APIs with Node.js and Express",
-        "Contributed to open-source projects on GitHub",
-        "Actively involved in college tech clubs and workshops"
+        "Built Full-Stack web applications using React and Node.js",
+  "Implemented SQL and MongoDB database solutions",
+  "Strengthened Core Java, OOPs and Data Structures",
+  "Developed REST APIs and software engineering fundamentals",
+  "Participated in technical workshops and collaborative projects"
       ]
     },
     {
@@ -40,10 +40,10 @@ const About = ({ darkMode }) => {
       cgpa: "Percentage: 60.6%",
       icon: <FaAward className="text-3xl" />,
       highlights: [
-        "Developed foundational programming skills in C++",
-        "Studied advanced mathematics for algorithmic thinking",
-        "Gained exposure to computer science principles and practices",
-        "Explored basic concepts of web development and design"
+        "Built a strong foundation in Mathematics and Computer Science",
+        "Developed logical and analytical problem-solving skills",
+        "Started learning programming fundamentals",
+        "Explored software development concepts"
       ]
     }
   ];
@@ -124,18 +124,20 @@ const About = ({ darkMode }) => {
           <div className={`text-xl md:text-2xl leading-relaxed md:leading-loose space-y-6 ${darkMode ? 'text-gray-300' : 'text-gray-700'
             }`}>
             <p>
-              I'm a <span className={`font-semibold ${darkMode ? 'text-indigo-400' : 'text-indigo-600'}`}>Software Engineer</span> passionate about building intelligent, impactful solutions.
-              As a <span className={`font-semibold ${darkMode ? 'text-indigo-400' : 'text-indigo-600'}`}>Computer Science specialist</span> with expertise in
-              <span className={`font-semibold ${darkMode ? 'text-purple-400' : 'text-purple-600'}`}> AI development</span> and system architecture, I’m dedicated to solving complex problems at the intersection of hardware capabilities and software innovation.
+              I'm a <span className={`font-semibold ${darkMode ? 'text-indigo-400' : 'text-indigo-600'}`}>Software Developer</span>
+              passionate about building scalable, user-focused applications and intelligent automation solutions. My experience spans
+              <span className={`font-semibold ${darkMode ? 'text-purple-400' : 'text-purple-600'}`}> Java</span>,
+              <span className={`font-semibold ${darkMode ? 'text-indigo-400' : 'text-indigo-600'}`}> Full-Stack Development</span>,
+              <span className={`font-semibold ${darkMode ? 'text-purple-400' : 'text-purple-600'}`}> Generative AI</span>, and
+              <span className={`font-semibold ${darkMode ? 'text-indigo-400' : 'text-indigo-600'}`}> Voice AI systems</span>.
             </p>
+
             <p>
-              My technical toolkit includes <span className={`font-semibold ${darkMode ? 'text-indigo-400' : 'text-indigo-600'}`}>machine learning implementation</span>,
-              <span className={`font-semibold ${darkMode ? 'text-purple-400' : 'text-purple-600'}`}> full-stack development</span>, and
-              <span className={`font-semibold ${darkMode ? 'text-indigo-400' : 'text-indigo-600'}`}> system optimization</span>.
-              I excel at transforming technical concepts into user-friendly applications that deliver measurable results.
+              Through my AI internship and freelance software development experience, I've built AI-powered Voice Commerce platforms, workflow automation systems, CRM solutions, and LLM-based applications using Java, Python, React, FastAPI, Node.js, MongoDB, Whisper STT, Microsoft Copilot, JIRA, and Confluence.
             </p>
+
             <p>
-              Currently advancing my expertise in artificial intelligence through graduate studies while developing practical solutions that bridge theoretical knowledge with real-world implementation challenges.
+              I enjoy designing clean, maintainable software that solves real-world problems. As a continuous learner, I'm expanding my expertise in Java, Spring Boot, backend development, cloud technologies, and modern AI systems while building scalable applications for enterprise environments.
             </p>
           </div>
 

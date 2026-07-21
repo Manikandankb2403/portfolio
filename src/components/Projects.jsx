@@ -1,17 +1,24 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaLaptopCode, FaMicrophone, FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaLaptopCode, FaMicrophone, FaGithub, FaExternalLinkAlt, FaRobot } from 'react-icons/fa';
 
 const Projects = ({ darkMode }) => {
   const projects = [
     {
       title: "Voice-Based AI Shop Assistant",
-      description: "Fully voice-driven shopping assistant using fine-tuned Whisper STT with React frontend for product browsing, cart and checkout.",
-      technologies: ["Whisper STT", "React", "Vite", "Fine-Tuning", "Speech Recognition"],
+      description: "AI-powered voice commerce assistant that uses fine-tuned Whisper STT, LLMs, React, and RAG to enable hands-free product search, cart management, and checkout.",
+      technologies: [
+        "Whisper STT",
+        "LLMs",
+        "RAG",
+        "React",
+        "FastAPI",
+        "Node.js"
+      ],
       achievements: [
-        "Real-time speech-to-text conversion",
-        "94% voice command accuracy",
-        "Reduced UI interactions by 70%"
+        "Fine-tuned Whisper STT for domain-specific speech recognition",
+        "Integrated Retrieval-Augmented Generation (RAG)",
+        "Enabled end-to-end voice shopping workflow"
       ],
       links: {
         source: "https://github.com/Manikandankb2403/Voice-Based-AI-Shop-Assistant",
@@ -23,12 +30,18 @@ const Projects = ({ darkMode }) => {
     },
     {
       title: "Tomato Quality Classification",
-      description: "CNN-based system with 97.5% accuracy using transfer learning. Deployed using a full-stack React + Node.js interface.",
-      technologies: ["CNN", "TensorFlow", "React", "Node.js"],
+      description: "Deep learning application using CNN and Transfer Learning for automated tomato quality classification with a React and Node.js interface.",
+      technologies: [
+        "CNN",
+        "Transfer Learning",
+        "TensorFlow",
+        "React",
+        "Node.js"
+      ],
       achievements: [
         "97.5% binary classification accuracy",
-        "96.67% multiclass accuracy",
-        "Real-time grading via image upload"
+        "96.67% multi-class accuracy",
+        "Real-time image classification"
       ],
       links: {
         source: "https://github.com/Manikandankb2403/Tomato-Quality-Classification",
@@ -40,12 +53,18 @@ const Projects = ({ darkMode }) => {
     },
     {
       title: "College Complaint Management System",
-      description: "MERN-based complaint tracking platform with role-based dashboards and real-time updates.",
-      technologies: ["MongoDB", "Express", "React", "Node.js"],
+      description: "Full-stack complaint management system with role-based dashboards, complaint tracking, and automated notifications.",
+      technologies: [
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "REST API"
+      ],
       achievements: [
-        "Reduced resolution time by 40%",
-        "Automated notifications",
-        "Role-based access control"
+        "Role-based authentication",
+        "Complaint lifecycle tracking",
+        "Automated notification system"
       ],
       links: {
         source: "https://github.com/Manikandankb2403/College-Complaint-Management-System",
@@ -57,18 +76,44 @@ const Projects = ({ darkMode }) => {
     },
     {
       title: "Voice Dataset Collector",
-      description: "Web-based tool to record voice samples from text for STT model training. Automatically maps recordings with unique IDs.",
+      description: "Web application for collecting and managing speech datasets to train domain-specific Speech-to-Text models.",
       technologies: ["React", "Node.js", "Express", "Multer", "Audio API", "JSON"],
       achievements: [
         "Live JSON-based prompt loading",
-        "Voice saved as .wav with ID mapping",
-        "Supports training-ready dataset generation"
+        "Supports training-ready dataset generation",
+        "Collected over 5,500 audio samples",
+        "Automatic audio-ID mapping",
       ],
       links: {
         source: "https://github.com/Manikandankb2403/data_collection_voice",
         demo: "https://data-collection-voice-frontend.onrender.com"
       },
       icon: <FaMicrophone />,
+      color: "text-purple-500",
+      gradient: "from-purple-500 to-pink-500"
+    },
+    {
+      title: "AI Workflow Automation",
+      description:
+        "Built AI-powered workflow automation solutions using Microsoft Copilot Studio and GoHighLevel to streamline business processes, CRM operations, appointment management, and enterprise workflows.",
+      technologies: [
+        "Microsoft Copilot Studio",
+        "GoHighLevel",
+        "JIRA",
+        "Confluence",
+        "AI Automation",
+        "CRM"
+      ],
+      achievements: [
+        "Automated CRM and business workflows",
+        "Integrated AI-powered enterprise processes",
+        "Built intelligent appointment and workflow automation"
+      ],
+      links: {
+        source: "https://github.com/Manikandankb2403/",
+        demo: "Private enterprise project"
+      },
+      icon: <FaRobot />,
       color: "text-purple-500",
       gradient: "from-purple-500 to-pink-500"
     }
@@ -115,10 +160,10 @@ const Projects = ({ darkMode }) => {
           transition={{ duration: 0.4, ease: "easeOut" }}
         >
           <h2 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">
-            Technical Projects
+            Featured Projects
           </h2>
           <p className={`text-lg max-w-2xl mx-auto ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-            AI and Full-Stack innovations crafted from real-world needs
+            Real-world software, AI, and full-stack applications built to solve practical problems.
           </p>
         </motion.div>
 
@@ -134,9 +179,8 @@ const Projects = ({ darkMode }) => {
               key={index}
               variants={itemVariants}
               whileHover="hover"
-              className={`rounded-xl overflow-hidden h-full flex flex-col ${
-                darkMode ? 'bg-gray-800/80 border border-gray-700' : 'bg-white border border-gray-200 shadow-lg'
-              }`}
+              className={`rounded-xl overflow-hidden h-full flex flex-col ${darkMode ? 'bg-gray-800/80 border border-gray-700' : 'bg-white border border-gray-200 shadow-lg'
+                }`}
             >
               <div className={`bg-gradient-to-r ${project.gradient} p-1`}>
                 <div className={`h-40 flex items-center justify-center ${darkMode ? 'bg-gray-800' : 'bg-gray-100'}`}>
@@ -164,9 +208,8 @@ const Projects = ({ darkMode }) => {
                         key={idx}
                         variants={techVariants}
                         viewport={{ once: true }}
-                        className={`px-3 py-1 rounded-full text-xs font-medium ${
-                          darkMode ? 'bg-gray-700/50 text-gray-200' : 'bg-gray-100 text-gray-800'
-                        }`}
+                        className={`px-3 py-1 rounded-full text-xs font-medium ${darkMode ? 'bg-gray-700/50 text-gray-200' : 'bg-gray-100 text-gray-800'
+                          }`}
                       >
                         {tech}
                       </motion.span>
@@ -191,23 +234,30 @@ const Projects = ({ darkMode }) => {
 
                 {/* Buttons */}
                 <div className="flex justify-between gap-3 pt-4 border-t border-gray-700/30 mt-auto">
-                  {project.links.demo === "#" || project.links.demo.toLowerCase().includes("unavailable") ? (
+                  {project.links.demo === "#" ||
+                    project.links.demo.toLowerCase().includes("unavailable") ||
+                    project.links.demo.toLowerCase().includes("private") ? (
                     <div
-                      className={`flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg font-medium text-sm cursor-not-allowed ${
-                        darkMode ? 'bg-gray-700 text-gray-400' : 'bg-gray-200 text-gray-500'
-                      }`}
-                      title="Demo unavailable due to model size constraints — tested locally only"
+                      className={`flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg font-medium text-sm cursor-not-allowed ${darkMode
+                          ? "bg-gray-700 text-gray-400"
+                          : "bg-gray-200 text-gray-500"
+                        }`}
+                      title={project.links.demo}
                     >
-                      <FaExternalLinkAlt /> Demo Unavailable
+                      <FaExternalLinkAlt />
+                      {project.links.demo.toLowerCase().includes("private")
+                        ? "Private Project"
+                        : "Demo Unavailable"}
                     </div>
                   ) : (
                     <motion.a
                       href={project.links.demo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg font-medium text-sm ${
-                        darkMode ? 'bg-gray-700 hover:bg-gray-600 text-white' : 'bg-gray-200 hover:bg-gray-300 text-gray-800'
-                      }`}
+                      className={`flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg font-medium text-sm ${darkMode
+                          ? "bg-gray-700 hover:bg-gray-600 text-white"
+                          : "bg-gray-200 hover:bg-gray-300 text-gray-800"
+                        }`}
                       whileHover={{ scale: 1.03 }}
                       whileTap={{ scale: 0.97 }}
                     >
@@ -219,11 +269,10 @@ const Projects = ({ darkMode }) => {
                     href={project.links.source}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg font-medium text-sm ${
-                      darkMode
-                        ? 'bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white'
-                        : 'bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-400 hover:to-purple-400 text-white'
-                    }`}
+                    className={`flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg font-medium text-sm ${darkMode
+                        ? "bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white"
+                        : "bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-400 hover:to-purple-400 text-white"
+                      }`}
                     whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.97 }}
                   >
