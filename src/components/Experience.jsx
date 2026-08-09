@@ -5,7 +5,7 @@ import { FaCalendarAlt, FaLaptopCode, FaTools } from 'react-icons/fa';
 const Experience = ({ darkMode }) => {
   const experiences = [
     {
-      position: "Software Developer Intern",
+      position: "AI Developer Intern",
       company: "Tech Vaseegrah",
       period: "Jan 2025 – Jul 2025",
       description: "Generative AI & Voice AI Development",
